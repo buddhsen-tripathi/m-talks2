@@ -7,7 +7,7 @@
 - Cloudflare Workers via `@cloudflare/vite-plugin`
 - Biome for formatting and linting, Vitest for tests
 
-## Local setup
+## Local setu
 
 ```bash
 bun install
