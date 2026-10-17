@@ -1,0 +1,25 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+# env / secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# build / framework output
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*
+tsconfig.tsbuildinfo
+
+# generated types
+worker-configuration.d.ts
+
+.context

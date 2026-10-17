@@ -1,0 +1,11 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "m-talks2",
+	"compatibility_date": "2026-10-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"main": "@tanstack/react-start/server-entry",
+	"observability": { "enabled": true }
+	// Add bindings (d1_databases, r2_buckets, kv_namespaces, queues, ...) here,
+	// then run `bun run cf-typegen` to regenerate worker-configuration.d.ts.
+	// Secrets live in .dev.vars locally and `wrangler secret put` in production.
+}
