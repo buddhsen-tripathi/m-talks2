@@ -13,6 +13,14 @@ const serverEnvSchema = z.object({
 	NICRRON_BASE_URL: z.string().url().default("https://api.nicrron.ai/v1"),
 	/** Routing preset or concrete model, e.g. nicrron/auto, anthropic/claude-sonnet-5. */
 	NICRRON_MODEL: z.string().min(1).default("nicrron/auto"),
+
+	// ── PRISM tracing (disabled when the key is unset) ──
+	PRISMTRACE_API_KEY: optionalString,
+	PRISMTRACE_PROJECT_ID: optionalString,
+	PRISMTRACE_HOST: z
+		.string()
+		.url()
+		.default("https://api.prism.blockconvey.com"),
 });
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>;
